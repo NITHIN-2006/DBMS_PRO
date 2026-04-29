@@ -33,39 +33,8 @@ This creates the `college_uniform_db` database with all required tables and seed
 
 ---
 
-## 2. Backend Setup
 
-```bash
-cd backend
-cp .env.example .env
-```
-
-Edit `.env` and fill in all values:
-
-```
-PORT=5000
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=your_mysql_password
-DB_NAME=college_uniform_db
-JWT_SECRET=any_long_random_string
-STRIPE_SECRET_KEY=sk_test_...
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
-```
-
-### Where to get keys
-
-**Stripe:**
-- Go to https://dashboard.stripe.com/test/apikeys
-- Copy the Secret key (starts with `sk_test_`)
-
-**Cloudinary:**
-- Go to https://cloudinary.com/console
-- Copy Cloud Name, API Key, and API Secret from the dashboard
-
-Then install and run:
+**COMMANDS**
 
 ```bash
 npm install
@@ -75,25 +44,11 @@ npm run dev
 Backend runs on http://localhost:5000
 
 ---
-
 ## 3. Frontend Setup
 
 ```bash
 cd frontend
-cp .env.example .env
-```
-
-Edit `.env`:
-
-```
-VITE_API_URL=http://localhost:5000/api
-VITE_STRIPE_PUBLISHABLE_KEY=pk_test_...
-```
-
-**Stripe Publishable Key:**
-- Go to https://dashboard.stripe.com/test/apikeys
-- Copy the Publishable key (starts with `pk_test_`)
-
+**COMMANDS**
 Then install and run:
 
 ```bash
