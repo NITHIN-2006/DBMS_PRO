@@ -45,7 +45,7 @@ const App = () => (
   <BrowserRouter>
     <AuthProvider>
       <CartProvider>
-        <Toaster position="top-right" toastOptions={{ duration: 3000 }} />
+        <Toaster position="top-right" toastOptions={{ duration: 1500 }} />
         <AppRoutes />
       </CartProvider>
     </AuthProvider>
